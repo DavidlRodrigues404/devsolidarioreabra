@@ -684,13 +684,13 @@ a {
 .foto-badge {
   position: absolute;
   bottom: -12px; right: -12px;
-  padding: 14px 20px;
-  border-radius: 14px;
+  padding: 12px 18px;
+  border-radius: 25px;
   background: var(--amarelo);
   color: var(--azul);
   font-family: var(--fonte-t);
   font-weight: 800;
-  font-size: 14px;
+  font-size: 16px;
   text-align: center;
   box-shadow: var(--shadow);
 }
@@ -745,13 +745,13 @@ a {
 .dif-t {
   display: block;
   font-weight: 700;
-  font-size: 14px;
+  font-size: 18px;
   color: var(--azul);
   margin-bottom: 2px;
 }
 
 .dif-s {
-  font-size: 12px;
+  font-size: 16px;
   color: var(--cinza);
   line-height: 1.5;
 }
@@ -788,7 +788,7 @@ a {
 .orc-inner {
   position: relative;
   z-index: 2;
-  max-width: 780px;
+  max-width: 850px;
   margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -862,7 +862,7 @@ a {
 }
 
 .orc-c-tipo {
-  font-size: 11px;
+  font-size: 18px;
   font-weight: 600;
   color: rgba(255,255,255,.5);
   text-transform: uppercase;
@@ -870,7 +870,7 @@ a {
 }
 
 .orc-c-val {
-  font-size: 14px;
+  font-size: 18px;
   font-weight: 600;
   color: var(--branco);
 }
@@ -879,7 +879,7 @@ a {
 .orc-form {
   background: var(--branco);
   border-radius: 20px;
-  padding: 28px;
+  padding: 30px;
   box-shadow: 0 24px 64px rgba(0,0,0,.2);
 }
 
@@ -971,14 +971,14 @@ a {
   display: inline-flex;
   align-items: center;
   gap: 10px;
-  padding: 16px 32px;
+  padding: 18px 36px;
   border: none;
   border-radius: 100px;
   background: var(--azul);
   color: var(--branco);
   font-family: var(--fonte-b);
   font-weight: 600;
-  font-size: 16px;
+  font-size: 22px;
   text-decoration: none;
   cursor: pointer;
   transition: all .2s;
@@ -1039,7 +1039,7 @@ footer {
 }
 
 .f-end {
-  font-size: 12px;
+  font-size: 14px;
   color: rgba(255,255,255,.4);
   line-height: 1.6;
 }
@@ -1050,7 +1050,7 @@ footer {
 }
 
 .f-dev {
-  font-size: 11px;
+  font-size: 14px;
   color: rgba(255,255,255,.25);
 }
 
@@ -1096,7 +1096,8 @@ footer {
   .sobre-foto       { display: none; }
 
   footer            { flex-direction: column; padding: 24px; text-align: center; }
-}
+
+  .s-tag { display: flex; justify-content: center; }
 
 @media (max-width: 520px) {
   .mini-cards { grid-template-columns: 1fr 1fr; }
