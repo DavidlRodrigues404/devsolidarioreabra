@@ -162,16 +162,22 @@ a {
    HERO
 ════════════════════════════════ */
 .hero {
-  margin-top: 86px;
-  position: relative;
+  min-height: calc(100vh - 86px);
   display: flex;
   justify-content: center;
+  align-items: center;
+
+  background-image: url('FundoHero.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .hero-content {
   width: 100%;
   max-width: 900px;
   margin: 0 auto;
+  gap: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -179,19 +185,19 @@ a {
 }
 
 .hero-sub {
-  max-width: 540px;
+  max-width: 800px;
   margin: 0 auto 36px;
 }
 
 .hero-btns,
 .hero-chips,
 .mini-cards {
-  width: 220%;
+  width: 190%;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 16px;
-  padding: 0 28px;
+  padding: 9px 28px;
   box-sizing: border-box;
 }
 
@@ -242,7 +248,7 @@ a {
 }
 
 .hero-sub {
-  font-size: 16px;
+  font-size: 18px;
   color: var(--cinza);
   line-height: 1.7;
   max-width: 460px;
@@ -257,20 +263,23 @@ a {
 }
 
 .hero-chips {
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
   gap: 16px;
+  justify-content: center;
 }
 
 .chip {
   display: flex;
   align-items: center;
-  gap: 6px;
-  padding: 7px 14px;
+  gap: 4px;
+  padding: 12px 26px;
   border-radius: 100px;
-  border: 1px solid var(--cinza2);
+  border: 2px solid var(--cinza2);
   background: var(--branco);
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 600;
   color: var(--azul);
   box-shadow: 0 2px 8px rgba(45,53,97,.06);
@@ -430,7 +439,7 @@ a {
 
 .strip-sub {
   display: block;
-  font-size: 15px;
+  font-size: 17px;
   color: rgba(255,255,255,.5);
   margin-top: 1px;
 }
@@ -452,9 +461,9 @@ a {
 .s-tag {
   display: inline-flex;
   align-items: center;
-  gap: 6px;
+  gap: 12px;
   margin-bottom: 14px;
-  font-size: 11px;
+  font-size: 37px;
   font-weight: 700;
   letter-spacing: 1.5px;
   text-transform: uppercase;
@@ -480,7 +489,7 @@ a {
 }
 
 .s-desc {
-  font-size: 15px;
+  font-size: 22px;
   color: var(--cinza);
   line-height: 1.6;
   max-width: 480px;
@@ -572,7 +581,7 @@ a {
   display: flex;
   align-items: center;
   gap: 10px;
-  font-size: 16px;
+  font-size: 20px;
   color: var(--cinza);
 }
 
@@ -596,7 +605,7 @@ a {
   background: transparent;
   font-family: var(--fonte-b);
   font-weight: 600;
-  font-size: 16px;
+  font-size: 20px;
   cursor: pointer;
   transition: all .2s;
   display: flex;
@@ -635,7 +644,7 @@ a {
   justify-self: start;
   max-width: 450px;
   width: 100%;
-  margin-left: 80px;
+  margin-left: 128px;
 }
 
 .sobre-foto-img {
@@ -692,7 +701,7 @@ a {
 }
 
 .sobre-desc {
-  font-size: 15px;
+  font-size: 22px;
   color: var(--cinza);
   line-height: 1.75;
   margin-bottom: 28px;
